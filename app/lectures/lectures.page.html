@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+    <ion-title>
+      Lecciones
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content
+  [scrollEvents]="true"
+  (ionScrollStart)="logScrollStart()"
+  (ionScroll)="logScrolling($event)"
+  (ionScrollEnd)="logScrollEnd()">
+  <!-- List of Text Items -->
+  <ion-list>
+    <ion-item class="list-item" routerLink="/lecture">
+      <ion-icon name="arrow-dropright-circle"></ion-icon>
+      <ion-label class="lecture-label">Lección 1</ion-label>
+      <ion-icon item-right name="checkmark-circle" color="secondary"></ion-icon>
+    </ion-item>
+    <ion-item class="list-item" routerLink="/lecture">
+      <ion-icon name="arrow-dropright-circle"></ion-icon>
+      <ion-label class="lecture-label">Lección 2</ion-label>
+      <ion-icon item-right name="checkmark-circle" color="secondary"></ion-icon>
+    </ion-item>
+    <ion-item class="list-item" routerLink="/lecture">
+      <ion-icon name="arrow-dropright-circle"></ion-icon>
+      <ion-label class="lecture-label">Lección 3</ion-label>
+      <ion-icon item-right name="close-circle" color="danger"></ion-icon>
+    </ion-item>
+    <ion-item class="list-item" routerLink="/lecture">
+      <ion-icon name="arrow-dropright-circle"></ion-icon>
+      <ion-label class="lecture-label">Lección 4</ion-label>
+      <ion-icon item-right name="close-circle" color="danger"></ion-icon>
+    </ion-item>
+    <ion-item class="list-item" routerLink="/lecture">
+      <ion-icon name="arrow-dropright-circle"></ion-icon>
+      <ion-label class="lecture-label">Lección 5</ion-label>
+      <ion-icon item-right name="checkmark-circle" color="secondary"></ion-icon>
+    </ion-item>
+  </ion-list>
