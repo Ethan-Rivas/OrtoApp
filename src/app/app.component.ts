@@ -37,9 +37,9 @@ export class AppComponent {
         icon  : "chatboxes"
       },
       {
-        title : "Contacto",
+        title : "Información",
         url   : "/contact",
-        icon  : "contact"
+        icon  : "information-circle"
       },
     ]
   }

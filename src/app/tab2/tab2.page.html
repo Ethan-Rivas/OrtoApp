@@ -1,9 +1,54 @@
 <ion-header>
   <ion-toolbar>
+      <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+      </ion-buttons>
     <ion-title>
-      Tab Two
+      OrtoApp
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content fullscreen="true" slot="fixed" >
+    <div class="card">
+      <div class="header">
+        <div class="avatar">
+          <img src="../../assets/user.jpg" alt="">
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="user-meta ion-text-center">
+          <h3 class="playername">Usuario Tester</h3>
+          <h5 class="country">Escuela Beta Test</h5>
+          <h6 class="ranking">Lecciones completadas: <ion-chip>
+              <ion-label>3</ion-label>
+            </ion-chip>
+          </h6>
+        </div>
+
+        <ion-list>
+          <ion-item class="list-item" routerLink="/lecture">
+            <ion-label class="lecture-label">Lección 1</ion-label>
+            <ion-icon item-right name="checkmark-circle" color="secondary"></ion-icon>
+          </ion-item>
+          <ion-item class="list-item" routerLink="/lecture">
+            <ion-label class="lecture-label">Lección 2</ion-label>
+            <ion-icon item-right name="checkmark-circle" color="secondary"></ion-icon>
+          </ion-item>
+          <ion-item class="list-item" routerLink="/lecture">
+            <ion-label class="lecture-label">Lección 3</ion-label>
+            <ion-icon item-right name="close-circle" color="danger"></ion-icon>
+          </ion-item>
+          <ion-item class="list-item" routerLink="/lecture">
+            <ion-label class="lecture-label">Lección 4</ion-label>
+            <ion-icon item-right name="close-circle" color="danger"></ion-icon>
+          </ion-item>
+          <ion-item class="list-item" routerLink="/lecture">
+            <ion-label class="lecture-label">Lección 5</ion-label>
+            <ion-icon item-right name="checkmark-circle" color="secondary"></ion-icon>
+          </ion-item>
+        </ion-list>
+
+      </div>
+    </div>
+</ion-content>
